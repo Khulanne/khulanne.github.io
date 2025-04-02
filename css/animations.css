@@ -1,0 +1,21 @@
+/* Basketball bounce animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(100px); }
+}
+
+/* Page transition animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Skill bar animations */
+@keyframes fillBar {
+    from { width: 0; }
+    to { width: var(--skill-level); }
+} 
