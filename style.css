@@ -150,3 +150,106 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+
+/* Profile Section Styles */
+.profile-section {
+    position: relative;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.profile-image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--lakers-gold);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.main-profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mascot-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mascot {
+    width: 100px;
+    position: absolute;
+    top: -50px;
+}
+
+.mascot-left {
+    left: 20%;
+    transform: scaleX(-1);
+}
+
+.mascot-right {
+    right: 20%;
+}
+
+/* Game Mode Section */
+.game-mode-section {
+    background: var(--lakers-purple);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    color: white;
+}
+
+.basketball-court {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.court-image {
+    width: 100%;
+    height: auto;
+}
+
+.player-character {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+}
+
+.player-sprite {
+    width: 100%;
+    height: auto;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    color: var(--lakers-gold);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mascot {
+        width: 80px;
+    }
+    
+    .mascot-left {
+        left: 10%;
+    }
+    
+    .mascot-right {
+        right: 10%;
+    }
+}
